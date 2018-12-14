@@ -1,0 +1,42 @@
+.SliderControlsButton {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  z-index: 10;
+  width: 30%;
+  display: flex;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  .anticon {
+    font-size: 32px;
+    color: #aaa;
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  &:hover .anticon {
+    opacity: 1;
+  }
+
+  &.prev {
+    left: 0;
+
+    .anticon {
+      margin-right: auto;
+    }
+  }
+
+  &.next {
+    right: 0;
+
+    .anticon {
+      margin-left: auto;
+    }
+  }
+}

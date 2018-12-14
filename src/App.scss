@@ -1,1 +1,19 @@
 @import '~antd/dist/antd.css';
+
+.App {
+
+  .main-layout {
+    min-height: 100vh;
+  }
+
+  .content-wrap {
+    margin: 16px 16px 0;
+  }
+
+  .content {
+    padding: 24px;
+    background: #fff;
+    min-height: 360px
+  }
+
+}

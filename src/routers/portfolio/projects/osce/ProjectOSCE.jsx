@@ -1,19 +1,23 @@
-import React, { Component } from 'react';
+import React  from 'react';
 
-// import PropTypes from 'prop-types';
+import ProjectPage from '../../../../components/ProjectPage/ProjectPage';
 
-class ProjectOSCE extends Component {
-  // static propTypes = {};
+import imgOSCE1 from '../../../../static/images/osce/new_message.jpg';
+import imgOSCE2 from '../../../../static/images/osce/call.jpg';
+import imgOSCE3 from '../../../../static/images/osce/registration.jpg';
+import { PROJECTS } from '../../../../constans/projects';
 
-  render() {
 
-    return (
-      <div className="ProjectOSCE">
-        ProjectOSCE
-      </div>
-    );
-  }
-}
+const
+  images = [
+    imgOSCE1,
+    imgOSCE2,
+    imgOSCE3
+  ],
+  info = PROJECTS.osce;
+
+
+const ProjectOSCE = () => <ProjectPage images={images} info={info} />;
 
 
 export default ProjectOSCE;

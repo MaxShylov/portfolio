@@ -1,19 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Footer as AntFooter } from 'antd/lib/layout'
+import pure from 'recompose/pure'
 
-// import PropTypes from 'prop-types';
+import './Footer.scss'
 
-class Footer extends Component {
-  // static propTypes = {};
-
-  render() {
-
-    return (
-      <div className="Footer">
-        Footer
-      </div>
-    );
-  }
-}
+const Footer = () => (
+  <AntFooter>
+    Max Shylov | Middle ​Full-Stack Web Engineer ©2018
+  </AntFooter>
+);
 
 
-export default Footer;
+export default pure(Footer);

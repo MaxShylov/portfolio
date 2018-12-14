@@ -1,0 +1,32 @@
+.Sider {
+  background: #fff;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 64px;
+    background: #595959;
+
+    svg {
+      height: 70%;
+    }
+  }
+
+  &.ant-layout-sider-collapsed .logo svg {
+
+    &:first-child {
+      align-self: flex-start;
+    }
+
+    &:last-child {
+      align-self: flex-end;
+    }
+
+  }
+
+  .ant-layout-sider-trigger {
+    background: #fff;
+    color: #1890ff;
+  }
+}
