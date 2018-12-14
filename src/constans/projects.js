@@ -28,7 +28,7 @@ export const PROJECTS = {
     bot_in_telergam: 'bt-debts',
     role: 'Full Stack Developer',
     technologies: 'Node.js',
-    description: '',
+    description: 'The bot record, save and control debts between people.',
     stack: 'Node.js'
   },
   ssp: {
@@ -48,7 +48,7 @@ export const PROJECTS = {
     site: 'https://portal.deepmed.com',
     role: 'Front-End Developer',
     technologies: 'ReactJS / Redux',
-    description: '',
+    description: 'The website shows statistics of cancer.',
     stack: 'React.js, Redux.js, Lodash, Sass, Axios, REST'
   }
 };
