@@ -40,7 +40,7 @@ class App extends Component {
                     {routes.map((route, i) => (
                       <Route
                         key={i}
-                        path={route.path}
+                        path={process.env.PUBLIC_URL + route.path}
                         exact={route.exact}
                         component={data => (
                           !route.redirect
