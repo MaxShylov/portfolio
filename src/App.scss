@@ -7,13 +7,14 @@
   }
 
   .content-wrap {
+    display: flex;
     margin: 16px 16px 0;
   }
 
   .content {
+    width: 100%;
     padding: 24px;
     background: #fff;
-    min-height: 360px
   }
 
 }

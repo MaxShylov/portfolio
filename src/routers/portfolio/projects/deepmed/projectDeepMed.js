@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProjectPage from '../../../../components/ProjectPage/ProjectPage';
+import PageProject from '../../../../components/PageProject/PageProject';
 import imgDeepMed1 from '../../../../static/images/deepmed/prostate-cancer_global-statistics.jpg';
 import imgDeepMed2 from '../../../../static/images/deepmed/login.jpg';
 import imgDeepMed3 from '../../../../static/images/deepmed/main.jpg';
@@ -20,7 +20,7 @@ const
   info = PROJECTS.deepmed;
 
 
-const ProjectDeepMed = () => <ProjectPage images={images} info={info} />;
+const ProjectDeepMed = () => <PageProject images={images} info={info} />;
 
 
 export default ProjectDeepMed;

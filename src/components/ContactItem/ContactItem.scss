@@ -1,0 +1,25 @@
+.ContactItem {
+
+  &.ant-list-item {
+    border-bottom: none;
+  }
+
+  .ant-list-item-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .anticon {
+    font-size: 24px;
+    margin-right: 16px;
+  }
+
+  a {
+    color: #000;
+
+    &:hover {
+      color: #1890ff;
+    }
+  }
+
+}

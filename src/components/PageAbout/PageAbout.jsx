@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 
 // import PropTypes from 'prop-types';
 
-class About extends Component {
+class PageAbout extends Component {
   // static propTypes = {};
 
   render() {
 
     return (
-      <div className="About">
+      <div className="PageAbout">
         ... coming soon ...
       </div>
     );
@@ -16,4 +16,4 @@ class About extends Component {
 }
 
 
-export default About;
+export default PageAbout;

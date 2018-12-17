@@ -1,6 +1,6 @@
 import React  from 'react';
 
-import ProjectPage from '../../../../components/ProjectPage/ProjectPage';
+import PageProject from '../../../../components/PageProject/PageProject';
 
 import imgOSCE1 from '../../../../static/images/osce/new_message.jpg';
 import imgOSCE2 from '../../../../static/images/osce/call.jpg';
@@ -17,7 +17,7 @@ const
   info = PROJECTS.osce;
 
 
-const ProjectOSCE = () => <ProjectPage images={images} info={info} />;
+const ProjectOSCE = () => <PageProject images={images} info={info} />;
 
 
 export default ProjectOSCE;

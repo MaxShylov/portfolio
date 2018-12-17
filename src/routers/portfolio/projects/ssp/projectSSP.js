@@ -1,6 +1,6 @@
 import React  from 'react';
 
-import ProjectPage from '../../../../components/ProjectPage/ProjectPage';
+import PageProject from '../../../../components/PageProject/PageProject';
 import imgSSP1 from '../../../../static/images/ssp/login.jpg';
 import { PROJECTS } from '../../../../constans/projects';
 
@@ -10,7 +10,7 @@ const
   info = PROJECTS.ssp;
 
 
-const ProjectSSP = () => <ProjectPage images={images} info={info} />;
+const ProjectSSP = () => <PageProject images={images} info={info} />;
 
 
 export default ProjectSSP;

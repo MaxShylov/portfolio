@@ -1,11 +1,11 @@
-import About from './about/About';
-import Portfolio from './portfolio/Portfolio';
-import ProjectDeepMed from './portfolio/projects/deepmed/ProjectDeepMed';
-import ProjectTodoListGql from './portfolio/projects/todoListGql/ProjectTodoListGql';
-import ProjectBtDebts from './portfolio/projects/btDebts/ProjectBtDebts';
-import ProjectSSP from './portfolio/projects/ssp/ProjectSSP';
-import ProjectOSCE from './portfolio/projects/osce/ProjectOSCE';
-import Contacts from './contacts/Contacts';
+import About from './about/about';
+import Portfolio from './portfolio/portfolio';
+import ProjectDeepMed from './portfolio/projects/deepmed/projectDeepMed';
+import ProjectTodoListGql from './portfolio/projects/todoListGql/projectTodoListGql';
+import ProjectBtDebts from './portfolio/projects/btDebts/projectBtDebts';
+import ProjectSSP from './portfolio/projects/ssp/projectSSP';
+import ProjectOSCE from './portfolio/projects/osce/projectOSCE';
+import Contacts from './contacts/contacts';
 
 export const ROUTERS = {
   INDEX: '/',

@@ -1,7 +1,7 @@
 import React  from 'react';
 
 import { PROJECTS } from '../../../../constans/projects';
-import ProjectPage from '../../../../components/ProjectPage/ProjectPage';
+import PageProject from '../../../../components/PageProject/PageProject';
 import imgBtDebts1 from '../../../../static/images/bt-debts/start.png';
 import imgBtDebts2 from '../../../../static/images/bt-debts/todo1.png';
 import imgBtDebts3 from '../../../../static/images/bt-debts/todo2.png';
@@ -20,6 +20,6 @@ const
   info = PROJECTS['bt-debts'];
 
 
-const ProjectBtDebts = () => <ProjectPage images={images} info={info} />;
+const ProjectBtDebts = () => <PageProject images={images} info={info} />;
 
 export default ProjectBtDebts;

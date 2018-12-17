@@ -8,7 +8,7 @@ import Slider from '../Slider/Slider';
 import InfoList from '../InfoList/InfoList';
 
 
-const ProjectPage = ({ images, info }) => (
+const PageProject = ({ images, info }) => (
   <Row gutter={16} className="ProjectPage">
     <Col lg={18}>
       <Slider images={images} />
@@ -20,10 +20,10 @@ const ProjectPage = ({ images, info }) => (
   </Row>
 );
 
-ProjectPage.propTypes = {
+PageProject.propTypes = {
   images: PropTypes.array.isRequired,
   info: PropTypes.object.isRequired
 };
 
 
-export default pure(ProjectPage);
+export default pure(PageProject);
