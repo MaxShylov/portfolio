@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from 'antd/lib/icon';
 import List from 'antd/lib/list';
@@ -9,7 +9,7 @@ const { string } = PropTypes;
 const ListItem = List.Item;
 
 
-const ContactItem = ({ icon, content, type }) => {
+function ContactItem({ icon, content, type }) {
   const createLink = () => {
     let prefix = '';
 
@@ -21,6 +21,9 @@ const ContactItem = ({ icon, content, type }) => {
 
   return (
     <ListItem className='ContactItem'>
+
+      {console.log('render ListItem')}
+
       <Icon type={icon} />
       {createLink()}
     </ListItem>

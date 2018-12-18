@@ -7,17 +7,21 @@ import keys from 'lodash/keys'
 import { PROJECTS } from '../../constans/projects';
 
 
-const Portfolio = () => (
-  <Row gutter={16}>
+const Portfolio = () => {
+  console.log(1);
 
-    {PROJECTS && keys(PROJECTS).map((i, k) => (
-      <Col md={12} xl={8} xxl={6} key={k}>
-        <SiteItem {...PROJECTS[i]} />
-      </Col>
-    ))}
+  return (
+    <Row gutter={16}>
 
-  </Row>
-);
+      {PROJECTS && keys(PROJECTS).map((i, k) => (
+        <Col md={12} xl={8} xxl={6} key={k}>
+          <SiteItem {...PROJECTS[i]} />
+        </Col>
+      ))}
+
+    </Row>
+  )
+};
 
 
 export default Portfolio;

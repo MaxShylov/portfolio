@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React  from 'react';
+
 import Layout from 'antd/lib/layout'
 import Router from 'react-router-dom/BrowserRouter';
-import Route from 'react-router-dom/Route';
-import Redirect from 'react-router-dom/Redirect';
-import Switch from 'react-router-dom/Switch';
 
 import './App.scss';
 
@@ -11,58 +9,40 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-import routes from './routers'
+import Routers from './routers'
 
 
 const { Content } = Layout;
 
 
-class App extends Component {
+const App = () => (
+  <div className="App">
 
-  render() {
-    return (
-      <div className="App">
+    <Router>
+      <Layout className='main-layout'>
 
-        <Router>
-          <Layout className='main-layout'>
+        <Sidebar />
 
-            <Sidebar />
+        <Layout>
 
-            <Layout>
+          <Header />
 
-              <Header />
+          <Content className='content-wrap'>
 
-              <Content className='content-wrap'>
+            <div className='content'>
 
-                <div className='content'>
+              <Routers />
 
-                  <Switch>
-                    {routes.map((route, i) => (
-                      <Route
-                        key={i}
-                        path={process.env.PUBLIC_URL + route.path}
-                        exact={route.exact}
-                        component={data => (
-                          !route.redirect
-                            ? <route.component {...data} />
-                            : <Redirect to={{ pathname: route.redirect }} />
-                        )}
-                      />
-                    ))}
-                  </Switch>
+            </div>
 
-                </div>
+          </Content>
 
-              </Content>
+          <Footer />
 
-              <Footer />
-
-            </Layout>
-          </Layout>
-        </Router>
-      </div>
-    );
-  }
-}
+        </Layout>
+      </Layout>
+    </Router>
+  </div>
+);
 
 export default App;
