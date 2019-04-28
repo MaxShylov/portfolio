@@ -3,7 +3,7 @@ export const PROJECTS = {
     id: 'osce',
     period_of_work: 'September 2018 - December 2018',
     name: 'OSCE Prac',
-    site: 'coming soon',
+    site: 'https://app.osceprac.com.au/',
     role: 'Front-End Developer',
     technologies: 'ReactJS / Redux',
     description: 'OSCE Prac is an online video platform, where users are connected together to run ' +
