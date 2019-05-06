@@ -1,15 +1,13 @@
-import React  from 'react';
+import React from 'react';
 
 import Layout from 'antd/lib/layout'
 import Router from 'react-router-dom/BrowserRouter';
 
 import './App.scss';
 
-import Sidebar from './components/Sidebar/Sidebar';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import { Sidebar, Header, Footer } from './components/BaseModule';
 
-import Routers from './routers'
+import Routes from './routes'
 
 
 const { Content } = Layout;
@@ -31,7 +29,7 @@ const App = () => (
 
             <div className='content'>
 
-              <Routers />
+              <Routes />
 
             </div>
 
