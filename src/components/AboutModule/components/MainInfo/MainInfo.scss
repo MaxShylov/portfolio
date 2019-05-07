@@ -1,0 +1,22 @@
+.MainInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .avatar {
+    width: 200px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .right-side {
+    text-align: right;
+  }
+
+  .name {
+    color: green;
+  }
+
+}

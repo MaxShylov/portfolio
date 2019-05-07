@@ -4,7 +4,8 @@ import Row from 'antd/lib/grid/row';
 import Col from 'antd/lib/grid/col';
 import pure from 'recompose/pure'
 
-import { Slider, Info } from '../components';
+import { Slider } from '../../ControlModule';
+import { Info } from '../components';
 
 
 const PageProject = ({ images, info }) => (

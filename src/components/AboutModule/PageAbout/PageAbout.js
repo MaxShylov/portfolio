@@ -1,9 +1,14 @@
 import React from 'react';
 
-// import PropTypes from 'prop-types';
+import './PageAbout.scss';
+import { MainInfo, Resume, SoftSkills, TechnicalSkills } from '../components'
+
 
 export const PageAbout = () => (
   <div className="PageAbout">
-    ... coming soon ...
+    <MainInfo />
+    <Resume />
+    <TechnicalSkills />
+    <SoftSkills />
   </div>
 );

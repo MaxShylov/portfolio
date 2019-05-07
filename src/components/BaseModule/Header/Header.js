@@ -1,11 +1,13 @@
 import React from 'react';
 import { Header as AntHeader } from 'antd/lib/layout'
 
-import './Header.scss'
+import styles from './Header.module.scss'
 import { PROJECTS } from '../../../constans/projects';
+import { ReactComponent as IconCv } from '../assets/images/cv.svg'
+import CV from '../assets/files/CV_Max_Shylov_Full-Stack.pdf'
 
 
-export const Header = () => {
+function getTitle() {
   const { pathname } = window.location;
   let title = pathname.slice(1);
 
@@ -13,12 +15,28 @@ export const Header = () => {
 
   if (pathname.includes('portfolio/')) {
     const id = pathname.split('portfolio/')[1];
-    title = 'Project ' + PROJECTS[id].name
+    title = 'Project: ' + PROJECTS[id].name
   }
 
+  return title;
+}
+
+
+export function Header() {
+  const
+    title = getTitle(),
+    handleClick = () => {
+      window.open(CV);
+    };
+
   return (
-    <AntHeader>
+    <AntHeader className={styles.header}>
       {title}
+
+      <IconCv
+        className={styles.icon}
+        onClick={handleClick}
+      />
     </AntHeader>
   );
-};
+}

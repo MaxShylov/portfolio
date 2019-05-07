@@ -31,7 +31,6 @@ export const PROJECTS = {
     description: 'The bot record, save and control debts between people.',
     stack: 'Node.js'
   },
-
   ssp: {
     id: 'ssp',
     period_of_work: 'June 2018 - August 2018',

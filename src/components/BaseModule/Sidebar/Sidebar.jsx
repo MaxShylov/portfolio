@@ -6,8 +6,8 @@ import withRouter from 'react-router-dom/withRouter';
 
 import './Sidebar.scss'
 import { ROUTES } from '../../../routes';
-import { ReactComponent as IconReact } from '../../../static/images/logos/logo-react.svg'
-import { ReactComponent as IconNode } from '../../../static/images/logos/logo-nodejs.svg'
+import { ReactComponent as IconReact } from '../assets/images/logo-react.svg'
+import { ReactComponent as IconNode } from '../assets/images/logo-nodejs.svg'
 
 const SubMenu = Menu.SubMenu;
 
