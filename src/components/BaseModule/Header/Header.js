@@ -26,7 +26,7 @@ export function Header() {
   const
     title = getTitle(),
     handleClick = () => {
-      window.open(CV);
+      window.open(CV + '?v=2');
     };
 
   return (
